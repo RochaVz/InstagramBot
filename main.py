@@ -8,9 +8,9 @@ from selenium.common.exceptions import (ElementClickInterceptedException,
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-SIMILAR_ACCOUNT = "pythonlearnerr"
-USERNAME = "0616ingeduardoo"
-PASSWORD = "Ed061600126"
+SIMILAR_ACCOUNT = "pythonlearnerr" # Or The account wants to follow
+USERNAME = "YOUR_INSTAGRAM_USERNAME"
+PASSWORD = "YOUR_INSTAGRAM_PASSWORD" #Warning: Storing credentials directly in the code is not secure for production applications. For personal projects, ensure this file is kept private.
 
 
 class InstaFollower:
