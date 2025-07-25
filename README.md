@@ -1,17 +1,21 @@
 Instagram Follower Bot
 This Python script uses the Selenium library to automate the process of following users on Instagram. It logs into a specified account, navigates to the followers list of a target account, and then follows a number of users from that list.
+
 This project is intended for educational purposes to demonstrate web scraping and automation with Selenium.
+
 Features
 Secure Login: Logs into an Instagram account and handles common pop-ups like "Save Info" and "Turn on Notifications".
 Targeted Following: Navigates to a specified "similar" account to find relevant users to follow.
 Dynamic Scrolling: Automatically scrolls through the followers list to load more users.
 Robust Following: Clicks the "Follow" button for users in the list.
 Resilient and Maintainable: Uses explicit waits and robust selectors to handle page load times and minor UI changes. Includes clear print statements for easy debugging.
+
 How It Works
 The script is built around the InstaFollower class, which encapsulates all the bot's functionality into three main methods:
 login(): Opens Instagram, enters the user credentials, and handles the various login pop-ups to get to the main feed.
 find_and_scroll_followers(): Navigates to the target account's profile page, clicks on their "followers" list to open the pop-up modal, and then scrolls down a set number of times to load more users into the view.
 follow_users(): After the list is loaded, this method finds all the "Follow" buttons currently visible and clicks them one by one, with short pauses in between to mimic human behavior and avoid being rate-limited.
+
 Getting Started
 Prerequisites
 Python 3.x
